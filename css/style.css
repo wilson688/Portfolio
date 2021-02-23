@@ -1,0 +1,66 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+
+h3 {
+  color: black;
+}
+
+
+h4 {
+  color: black;
+}
+
+h5 {
+  color: black;
+}
+
+h6 {
+  color: black;
+}
+
+li {
+  color: black;
+}
+
+div {
+ color: black;
+}
+
+.skillSet {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 30%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -50px;
+}
+
+.skills {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 40%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -50px;
+
+}
+
+#navbar {
+   position: relative;
+   top: 0;
+   left: 0;
+   height: 125px;
+   width: 125px;
+}
