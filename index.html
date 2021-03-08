@@ -2,27 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sowmya Wilson's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
    <header>
-       <nav>
-           <div class="navbar">
-               <a href="#home">Home</a>
-               <a href="#about">About</a>
-               <a href="#pages">Pages</a>
-               <a href="#algo">DataStructures</a>
-               <a href="#contact">Contact</a>
-           </div>
+<!--       <div class="logo">-->
+<!--           <img src="img/component-main.png" alt="" class="intro__img">-->
+<!--       </div>-->
+       <button class="nav-toggle" aria-label="toggle nagivation">
+           <span class="hamburger"></span>
+       </button>
+       <nav class="nav">
+           <ul class="nav__list">
+               <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+           </ul>
        </nav>
    </header>
 
-   <h1>HELLO ------------ </h1>
-   <h1>I AM SOWMYA WILSON </h1>
-   <h2>SOFTWARE DEVELOPER</h2>
+   <section class="intro" id="home">
+       <h1 class="section__title section__title--intro">
+           Hi, I am <strong>Sowmya Wilson</strong>
+       </h1>
+       <p class="section__subtitle section__subtitle--intro">Software Developer</p>
+       <img src="img/linkedin-profile.jpeg" alt="a picture of Sowmya Wilson" class="intro__img">
+   </section>
+
+   <section class="my-services" id="services">
+       <h2 class="section__title section__title--services">What I do</h2>
+       <div class="services">
+           <div class="service">
+               <h3>Algorithms & DataStructure</h3>
+               <p>
+                  Alot of leetcode, kattis and random interesting problems
+               </p>
+           </div>
+
+           <div class="service">
+               <h3>System Design</h3>
+               <p>
+                   Games, Mini Projects
+               </p>
+           </div>
+
+           <div class="service">
+               <h3>Rest Applications</h3>
+               <p>
+                   Web Based Projects
+               </p>
+           </div>
+       </div>
+       <a href="#work" class="btn">My Work</a>
+   </section>
+
+<!--   About me-->
+   <section class="about-me" id="about">
+       <h2 class="section__title section__title--about">About me</h2>
+       <p class="section__subtitle section__subtitle--about">Software Developer</p>
+       <div class="about-me__body">
+           <p>   I am 3 years into coding, I learnt some from college and mostly on my own. Sometimes it's hard sometimes I genius!! haha..</p>
+       </div>
+
+       <img src="img/ny-bridge-smile.JPG" alt="cute cartoon" class="about-me__img">
+   </section>
+
+<!-- My Work-->
+   <section class="my-work" id="work">
+       <h2 class="section__title section__title--works">Projects</h2>
+       <p class="section__subtitle section__subtitle--work">Wide range of projects from leetcode questions to microservices</p>
+       <div class="portfolio">
+           <a href="#" class="portfolio__item">
+               <img src="img/LeetCode_logo_rvs.png" alt="" class="portfolio__img" href="https://github.com/wilson688/Leetcode-Solutions">
+           </a>
+           <a href="#" class="portfolio__item">
+               <img src="img/game-pic.png" alt="" class="portfolio__img">
+           </a>
+           <a href="#" class="portfolio__item">
+               <img src="img/rest-api-img.png" alt="" class="portfolio__img">
+           </a>
+           <a href="#" class="portfolio__item">
+               <img src="img/todo-list.jpg" alt="" class="portfolio__img">
+           </a>
+           <a href="#" class="portfolio__item">
+               <img src="img/sudoku.jpg" alt="" class="portfolio__img">
+           </a>
+           <a href="#" class="portfolio__item">
+               <img src="img/music.jpeg" alt="" class="portfolio__img">
+           </a>
+           <a href="#" class="portfolio__item">
+               <img src="img/tetris.jpg" alt="" class="portfolio__img">
+           </a>
+       </div>
+   </section>
 
 
+<!--   footer-->
+
+   <footer>
+       <a href="mailto:sowmyawilson.saripalli@gmail.com" class="footer__link">sowmyawilson.saripalli@gmail.com</a>
+       <ul class="social-list">
+           <li class="social-list__item"><a class="social-list__link">a</a></li>
+           <li class="social-list__item"><a class="social-list__link">b</a></li>
+           <li class="social-list__item"><a class="social-list__link">c</a></li>
+           <li class="social-list__item"><a class="social-list__link">d</a></li>
+       </ul>
+   </footer>
 
 </body>
 </html>
