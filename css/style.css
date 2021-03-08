@@ -159,7 +159,7 @@ nav {
 
 }
 
-.my-services {
+.my-background {
   background-color: var(--clr-dark);
   background-image: url(../img/component-3.png);
   background-size: cover;
@@ -168,12 +168,12 @@ nav {
   text-align: center;
 }
 
-.section__title--services {
+.section__title--background {
  color: var(--clr-accent);
  position: relative;
 }
 
-.section__title--services::after {
+.section__title--background::after {
  content: '';
  display: block;
  width: 2em;
@@ -183,7 +183,7 @@ nav {
  opacity: 0.25;
 }
 
-.services {
+.background {
   margin-bottom: 4em;
 }
 
@@ -193,7 +193,7 @@ nav {
 }
 
 @media (min-width: 800px) {
-  .services {
+  .background {
      display: flex;
      max-width: 1000px;
      margin-left: auto;
@@ -230,9 +230,9 @@ nav {
    }
 
    .section__subtitle--about {
-     grid-column: 1 / -1;
+     grid-column: -1/1;
      grid-row: 2;
-     width: cal(100% + 2em);
+     width: calc(100% + 2em);
      position: relative;
      left: -1em;
      padding-left: 1em;
