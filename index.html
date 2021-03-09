@@ -7,24 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/d0067586f4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
    <header>
-<!--       <div class="logo">-->
-<!--           <img src="img/component-main.png" alt="" class="intro__img">-->
-<!--       </div>-->
        <button class="nav-toggle" aria-label="toggle nagivation">
            <span class="hamburger"></span>
        </button>
        <nav class="nav">
            <ul class="nav__list">
                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-               <li class="nav__item"><a href="#" class="nav__link">Background</a></li>
-               <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
-               <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+               <li class="nav__item"><a href="#background" class="nav__link">Background</a></li>
+               <li class="nav__item"><a href="#aboutme" class="nav__link">About me</a></li>
+               <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
            </ul>
        </nav>
    </header>
@@ -41,41 +38,36 @@
        <h2 class="section__title section__title--background">Background</h2>
        <div class="background">
            <div class="service">
-               <h3>Software Developer at Capital One</h3>
+               <h3>Current Roles</h3>
                <p>
-
+                   Software Developer at Capital One</strong>
                </p>
+               <p>Volunteer at Disaster Accountability Project</strong></p>
            </div>
 
            <div class="service">
-               <h3>Volunteer at Disaster Accountability Project</h3>
+               <h3>Education</h3>
                <p>
-
+                  University of Southern Mississippi <strong>May 2018</strong>
                </p>
+               <p>CVSR College of Engineering <strong>May 2016</strong></p>
            </div>
-
-<!--           <div class="service">-->
-<!--               <h3>Rest Applications</h3>-->
-<!--               <p>-->
-<!--       -->
-<!--               </p>-->
-<!--           </div>-->
        </div>
        <a href="#work" class="btn">My Work</a>
    </section>
 
 <!--   About me-->
-   <section class="about-me" id="about">
+   <section class="about-me" id="aboutme">
        <h2 class="section__title section__title--about">About me</h2>
        <p class="section__subtitle section__subtitle--about"></p>
        <div class="about-me__body">
            <p>   I am 3 years into coding, I learnt some from college and mostly on my own. Sometimes it's hard sometimes I am genius!! haha..</p>
-           <p> Graduated from <strong>CVSR College of Engineering batch of 2016</strong> in India as an Electronics Major (my dad forced me to join this) I knew I always wanted to be
-               a <strong>software engineering</strong> so I decided to come in USA and do my masters in computer science at <strong>University of Southern Mississippi</strong></p>
+           <p> Graduated in Electronics Major <strong>from CVSR College of Engineering, India batch of 2016</strong> (my dad forced me to join this). I knew I always wanted to be
+               a <strong>software engineering</strong> so I decided to come to USA and do my masters in computer science at <strong>University of Southern Mississippi.</strong></p>
 
-           <p>I was a newbie to coding but in 2 years of my masters I learnt the basics and on how to use algorithms to come up with solutions</p>
-           <p>After graduating from <strong>USM in 2018</strong> I spent my time preparing for tech world</p>
-           <p>I learnt a great deal from real world experience and each and every step in my life made me a better programmer and a better person</p>
+           <p>I was a newbie to coding but in 2 years of my masters I learnt the basics and how to use algorithms to solve problems.</p>
+           <p>After graduating from <strong>USM in 2018</strong> I spent my time preparing for tech world.</p>
+           <p>I learnt a great deal from real world experience and each and every step in my life made me a better programmer and a better person.</p>
        </div>
 
        <img src="img/ny-bridge-smile.JPG" alt="cute cartoon" class="about-me__img">
@@ -87,7 +79,7 @@
        <p class="section__subtitle section__subtitle--work">Wide range of projects from leetcode questions to microservices</p>
        <div class="portfolio">
            <a href="#" class="portfolio__item">
-               <img src="img/LeetCode_logo_rvs.png" alt="" class="portfolio__img" href="https://github.com/wilson688/Leetcode-Solutions">
+               <img src="img/LeetCode_logo_rvs.png" alt="" class="portfolio__img">
            </a>
            <a href="#" class="portfolio__item">
                <img src="img/game-pic.png" alt="" class="portfolio__img">
@@ -113,15 +105,20 @@
 
 <!--   footer-->
 
-   <footer>
+   <footer class="footer">
        <a href="mailto:sowmyawilson.saripalli@gmail.com" class="footer__link">sowmyawilson.saripalli@gmail.com</a>
        <ul class="social-list">
-           <li class="social-list__item"><a class="social-list__link">a</a></li>
-           <li class="social-list__item"><a class="social-list__link">b</a></li>
-           <li class="social-list__item"><a class="social-list__link">c</a></li>
-           <li class="social-list__item"><a class="social-list__link">d</a></li>
+           <li class="social-list__item">
+               <a class="social-list__link" href="https://github.com/wilson688">
+                   <i class="fab fa-github">
+                   </i>
+               </a>
+           </li>
+           <li class="social-list__item"><a class="social-list__link" href="https://linkedin.com/in/sowmya-wilson"><i class="fab fa-linkedin"></i></a></li>
        </ul>
    </footer>
+
+   <script src="js/index.js"></script>
 
 </body>
 </html>
