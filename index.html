@@ -1,124 +1,723 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sowmya Wilson's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d0067586f4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css"/>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Ceevee 2.0</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<body>
 
-   <header>
-       <button class="nav-toggle" aria-label="toggle nagivation">
-           <span class="hamburger"></span>
-       </button>
-       <nav class="nav">
-           <ul class="nav__list">
-               <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-               <li class="nav__item"><a href="#background" class="nav__link">Background</a></li>
-               <li class="nav__item"><a href="#aboutme" class="nav__link">About me</a></li>
-               <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-           </ul>
-       </nav>
-   </header>
-
-   <section class="intro" id="home">
-       <h1 class="section__title section__title--intro">
-           Hi, I am <strong>Sowmya Wilson</strong>
-       </h1>
-       <p class="section__subtitle section__subtitle--intro">Software Developer</p>
-       <img src="img/linkedin-profile.jpeg" alt="a picture of Sowmya Wilson" class="intro__img">
-   </section>
-
-   <section class="my-background" id="background">
-       <h2 class="section__title section__title--background">Background</h2>
-       <div class="background">
-           <div class="service">
-               <h3>Current Roles</h3>
-               <p>
-                   Software Developer at Capital One</strong>
-               </p>
-               <p>Volunteer at Disaster Accountability Project</strong></p>
-           </div>
-
-           <div class="service">
-               <h3>Education</h3>
-               <p>
-                  University of Southern Mississippi <strong>May 2018</strong>
-               </p>
-               <p>CVSR College of Engineering <strong>May 2016</strong></p>
-           </div>
-       </div>
-       <a href="#work" class="btn">My Work</a>
-   </section>
-
-<!--   About me-->
-   <section class="about-me" id="aboutme">
-       <h2 class="section__title section__title--about">About me</h2>
-       <p class="section__subtitle section__subtitle--about"></p>
-       <div class="about-me__body">
-           <p>   I am 3 years into coding, I learnt some from college and mostly on my own. Sometimes it's hard sometimes I am genius!! haha..</p>
-           <p> Graduated in Electronics Major <strong>from CVSR College of Engineering, India batch of 2016</strong> (my dad forced me to join this). I knew I always wanted to be
-               a <strong>software engineering</strong> so I decided to come to USA and do my masters in computer science at <strong>University of Southern Mississippi.</strong></p>
-
-           <p>I was a newbie to coding but in 2 years of my masters I learnt the basics and how to use algorithms to solve problems.</p>
-           <p>After graduating from <strong>USM in 2018</strong> I spent my time preparing for tech world.</p>
-           <p>I learnt a great deal from real world experience and each and every step in my life made me a better programmer and a better person.</p>
-       </div>
-
-       <img src="img/ny-bridge-smile.JPG" alt="cute cartoon" class="about-me__img">
-   </section>
-
-<!-- My Work-->
-   <section class="my-work" id="work">
-       <h2 class="section__title section__title--works">Projects</h2>
-       <p class="section__subtitle section__subtitle--work">Wide range of projects from leetcode questions to microservices</p>
-       <div class="portfolio">
-           <a href="#" class="portfolio__item">
-               <img src="img/LeetCode_logo_rvs.png" alt="" class="portfolio__img">
-           </a>
-           <a href="#" class="portfolio__item">
-               <img src="img/game-pic.png" alt="" class="portfolio__img">
-           </a>
-           <a href="#" class="portfolio__item">
-               <img src="img/rest-api-img.png" alt="" class="portfolio__img">
-           </a>
-           <a href="#" class="portfolio__item">
-               <img src="img/todo-list.jpg" alt="" class="portfolio__img">
-           </a>
-           <a href="#" class="portfolio__item">
-               <img src="img/sudoku.jpg" alt="" class="portfolio__img">
-           </a>
-           <a href="#" class="portfolio__item">
-               <img src="img/music.jpeg" alt="" class="portfolio__img">
-           </a>
-           <a href="#" class="portfolio__item">
-               <img src="img/tetris.jpg" alt="" class="portfolio__img">
-           </a>
-       </div>
-   </section>
+<body id="top" class="ss-preload">
 
 
-<!--   footer-->
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
-   <footer class="footer">
-       <a href="mailto:sowmyawilson.saripalli@gmail.com" class="footer__link">sowmyawilson.saripalli@gmail.com</a>
-       <ul class="social-list">
-           <li class="social-list__item">
-               <a class="social-list__link" href="https://github.com/wilson688">
-                   <i class="fab fa-github">
-                   </i>
-               </a>
-           </li>
-           <li class="social-list__item"><a class="social-list__link" href="https://linkedin.com/in/sowmya-wilson"><i class="fab fa-linkedin"></i></a></li>
-       </ul>
-   </footer>
 
-   <script src="js/index.js"></script>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+                    <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+                    <li><a class="smoothscroll" href="#contact">Say Hello</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+        
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>I'm Sowmya Wilson</h1>
+
+                    <h3>
+                    I graduated from <span> University of Southern Mississippi</span> with Master's in <span>Computer Science</span>. I have more than 3 years
+                     of professional experience in IT as a <span> Software Developer</span>. I like to build microservices, debug issues, deploy stuff and to teach and learn!
+                    </h3>
+                    <div class="s-hero__content-social">
+                        <a href="https://www.facebook.com/saripalli.sowmya"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/sowmyasaripalli"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/sowmya_wilson/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://github.com/wilson688"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/sowmya-wilson/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/linkedin-profile.jpg" alt="">
+            </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>For fun I just like to go to a park and just relax while having coffee. Quite times are my favourite times. I love to write, I write my emotions, my prayers,
+                what I want to do, what I want to be in future, everything needs to be written that's how I talk to myself. </p>
+                <p>Other than loving my career and writing my thoughts, I enjoy anime, listening to anime songs (that's weird I know), jazz, rock and sometimes country music as well. I am an INFJ, so I tend to make slow
+                but long lasting friendships.</p>
+
+                <hr>
+
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
+    
+                        <p>
+                        Sowmya Wilson <br>
+                        Richmond, VA 23233 US <br>
+                        <a href="tel:+5128031507">+512 803 1507</a> <br>
+                        <a href="mailto:#0">sowmyawilson.saripalli@gmail.com</a>
+                        </p>
+                        
+                    </div>
+                    <div class="column w-1000-stack">
+                        <a href="docs/SowmyaWSaripalliResume.pdf" class="btn btn--download" download>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Disaster Accountability Project</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Volunteer Software Developer</span>
+                            <span class="resume-block__header-date">
+                                March 2021 - Present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    I believe only way to grow is to try new things even when they are hard, and to work with experienced people. So when Ben, founder of Disaster Accountability Project reached out to me asking if I am interested in volunteer work
+                        I immediately said yes! I got to work with people from all around the world, in sync only to help others in need. It is overall a great experience for me to be a part of this project.
+                        Even though I am new to the team, it's everyone's amazing team work, that makes me excited about it.
+
+
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Capital One</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Developer</span>
+                            <span class="resume-block__header-date">
+                                December 2018 - Present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        My learning curve was exponential here. I honed my skills that include java, aws, scripting and devops but learning something new everyday is the fuel to my fire.
+                        I acquired the ability to speak with non-technical audiences as well as collaborate with other teams as well.
+                        My team's main project is a Kafka consumer which reads data from one of the data streams. I had good exposure to Kafka here, built configuration,
+                        dealt with a lot of application designs. Looking how quick I learn, my manager made me to contribute to other teams, whenever possible.
+                        I would make handy scripts or tools for my team and others, as well.
+                        I built most of my teams CI/CD pipelines, AWS infrastructure and design as well.
+                    </p>
+                    <p>
+                        Another interesting fact about working for this company, is that they follow YBYO policy.
+                        Which basically means 'You Build You Own', where developers own everything, so starting from coming with the architecture to
+                        putting the code into production is the developer's duty to make sure everything is perfect.
+                    </p>
+                    <p>I went in as  a Developer, but in times I became tester, devops engineer and scrum master</p>
+                    <p>The only bad habit I learnt here is I craved for perfection, I wouldn't push my code until it's perfect, until I find the best solution</p>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Cogent InfoTech</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Java Developer</span>
+                            <span class="resume-block__header-date">
+                                September 2018 - November 2018
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                      This is a short time project, where I learnt to be part of a team.
+                        I build a Spring Boot application, to improve the customer experience when they try to get the different types of loans
+                        available from each bank in that area. Here I covered most of the advance java topics such as spring security, spring data JPA, Hiberate.
+                        And perfected my scripting and debugging skills.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Cell-Gate Access</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Developer</span>
+                            <span class="resume-block__header-date">
+                                June 2018 - August 2018
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        A strong desire to gain hands-on experience of working in a professional workplace drove me to
+                        join Cell-Gate in June 2018. I have seen the estimation of little enhancements
+                        in business measures is profoundly under-evaluated, until their total impact shows itself upon execution.
+                        I utilised this newly acquired knowledge to design scalable and light weight architectural products for various client.
+                        My project involved development of a new security camera application. A customer can set a timer where he/she can put a notification window,
+                        and if anything strange happens during that window time, they would get a notification of with the live video so they would monitor the location.
+                        My job is to test these new cameras, research on competitors, make changes to users admin portals, and the information that they would be able to update.
+                    </p>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">University Of Southern Mississippi</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Research Assistant</span>
+                            <span class="resume-block__header-date">
+                                September 2016 - May 2018
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                     As a research assistant I worked under Dr. Kala Marapareddy on machine learning analysis on big data.
+                     My research work involved detection of runways of different airports. Remote sensing data gives essential and critical
+                        information for detecting any object, a place, change detection and land cover of selected area of interest.
+                        Runway detection is an important topic because if it's applications in military and civil aviation fields.
+                        I gathered the latest data from NASA and implemented different clustering methods. I was fortunate enough to share
+                        my research to NASA team and even give a presentation in 2018 Maths & Science event.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">University of Southern Mississippi</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Master in Computer Science</span>
+                            <span class="resume-block__header-date">
+                                May 2018
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        My consistent desire to become a programmer brought me to the United States to pursue my Master's in Computer Science.
+                        I learnt how to code from college and mostly online.
+                        I was a newbie to coding but in 2 years of my masters I learnt the basics and how to use algorithms to solve problems.
+                        I understood how to think statistically, approach a problem with different approaches.
+                        I think I have come a long way purely through dedication and focus. My involvement in academic and professional pursuits have increased my awareness of the larger picture and taught me to be more organized, patient and diligent and to look for creative solutions to problems.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">CVSR College of Engineering</h4>
+                        <p class="resume-block__header-meta">
+                            <span>B.Tech. Electronics and Communication Engineering</span>
+                            <span class="resume-block__header-date">
+                                May 2016
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I love coding. When I was a kid I thought that's the coolest job to do. Coming from a middle class family it was
+                        hard to explain my family why I love it so much (no one in my family is from IT until then).
+                        Everyone told me to give it up cause there are too many software developers in this world. So I had to take Electronics and Communication Engineering.
+                    </p>
+                    <p>I didn't hate this course cause in first year we had basics to programming which I loved, and apparently I was good at making circuits.
+                    I enjoyed making digital ic applications, learning about antennas, analog communications and wave propagation.</p>
+                    <p>This entire time I was able to get the basics of IT, I didn't know how to code, but I knew what was actually happening inside.</p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <ul class="skill-bars-fat">
+                        <li>
+                         <div class="progress percent100">Advanced</div>
+                         <strong>Docker</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent100"></div>
+                        <strong>Rest Applications</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent100">Advanced</div>
+                            <strong>GIT</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent80"></div>
+                        <strong>JAVA</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent80"></div>
+                            <strong>Testing</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent75"></div>
+                            <strong>ALGORITHMS AND DATA STRUCTURES</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent65"></div>
+                        <strong>AWS</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent65"></div>
+                        <strong>CI/CD Jenkins</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent65"></div>
+                        <strong>NodeJs</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent65"></div>
+                        <strong>JavaScript</strong>
+                        </li>
+                        <li><div class="progress percent65"></div>
+                            <strong>PostgreSQL</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent65"></div>
+                            <strong>MySQL</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent25"></div>
+                            <strong>Machine Learning</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent25"></div>
+                            <strong>Python</strong>
+                        </li>
+
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>A Few Of My Projects</h3>
+            </div>
+        </div>
+
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/portfolio/droplet.jpg" 
+                         srcset="images/portfolio/droplet.jpg 1x, 
+                                 images/portfolio/droplet@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/portfolio/lamp.jpg" 
+                         srcset="images/portfolio/lamp.jpg 1x, 
+                                 images/portfolio/lamp@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/portfolio/minimalismo.jpg" 
+                         srcset="images/portfolio/minimalismo.jpg 1x, 
+                                 images/portfolio/minimalismo@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/shutterbug.jpg" 
+                         srcset="images/portfolio/shutterbug.jpg 1x, 
+                                 images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="images/portfolio/fuji.jpg" 
+                         srcset="images/portfolio/fuji.jpg 1x, 
+                                 images/portfolio/fuji@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="images/portfolio/skaterboy.jpg" 
+                         srcset="images/portfolio/skaterboy.jpg 1x, 
+                                 images/portfolio/skaterboy@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-07" class="folio-item__thumb">
+                    <img src="images/portfolio/rucksack.jpg" 
+                         srcset="images/portfolio/rucksack.jpg 1x, 
+                                 images/portfolio/rucksack@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-08" class="folio-item__thumb">
+                    <img src="images/portfolio/sanddunes.jpg" 
+                         srcset="images/portfolio/sanddunes.jpg 1x, 
+                                 images/portfolio/sanddunes@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-droplet.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Droplet</h5>
+                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-lamp.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>The Lamp</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Minimalismo</h5>
+                    <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-shutterbug.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Shutterbug</h5>
+                    <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                    <ul class="modal-popup__cat">
+                        <li>E-Commerce</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+
+                <img src="images/portfolio/gallery/g-fuji.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Fuji</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Skaterboy</h5>
+                    <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-07" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-rucksack.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Rucksack</h5>
+                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-08" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Sand Dunes</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Web Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+
+    </section> <!-- end s-portfolio -->
+
+    <!-- contact
+       ================================================== -->
+    <section id="contact" class="s-contact target-section">
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Say Hello</h3>
+            </div>
+        </div>
+
+        <div class="row section-intro">
+            <div class="col-twelve">
+                <h4 class="huge-text">I'd Love To Hear From You.</h4>
+            </div>
+        </div> <!-- /section-intro -->
+
+        <div class="row contact-form">
+
+            <div class="col-twelve">
+
+                <!-- form -->
+                <form name="contactForm" id="contactForm" method="post" action="">
+                    <fieldset>
+
+                        <div class="form-field">
+                            <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+                        </div>
+                        <div class="form-field">
+                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+                        </div>
+                        <div class="form-field">
+                            <button class="submitform">Submit</button>
+                            <div id="submit-loader">
+                                <div class="text-loader">Sending...</div>
+                                <div class="s-loader">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form> <!-- Form End -->
+
+                <!-- contact-warning -->
+                <div id="message-warning">
+                </div>
+                <!-- contact-success -->
+                <div id="message-success">
+                    <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+                </div>
+
+            </div> <!-- /col-twelve -->
+
+        </div> <!-- /contact-form -->
+
+    </section> <!-- /contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="https://www.facebook.com/saripalli.sowmya"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/sowmyasaripalli"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/sowmya_wilson/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/wilson688"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sowmya-wilson/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>
